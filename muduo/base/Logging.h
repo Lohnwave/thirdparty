@@ -128,6 +128,7 @@ inline Logger::LogLevel Logger::logLevel()
 #define LOG_INFO if (muduo::Logger::logLevel() <= muduo::Logger::INFO) \
   muduo::Logger(__FILE__, __LINE__).stream()
 #define LOG_WARN muduo::Logger(__FILE__, __LINE__, muduo::Logger::WARN).stream()
+#define LOG_WARNING muduo::Logger(__FILE__, __LINE__, muduo::Logger::WARN).stream()
 #define LOG_ERROR muduo::Logger(__FILE__, __LINE__, muduo::Logger::ERROR).stream()
 #define LOG_FATAL muduo::Logger(__FILE__, __LINE__, muduo::Logger::FATAL).stream()
 #define LOG_SYSERR muduo::Logger(__FILE__, __LINE__, false).stream()
